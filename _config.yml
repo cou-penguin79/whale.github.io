@@ -125,3 +125,10 @@ archive_generator:
   yearly: false
   monthly: true
   order_by: -date
+
+# hexo-admin 后台配置
+admin:
+  # 后台 Deploy 按钮一键发布：generate + commit + push（触发 Actions 上线）
+  deployCommand: deploy-scpt.cmd
+  # 后台挂载路径
+
