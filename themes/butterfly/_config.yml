@@ -170,6 +170,10 @@ subtitle:
     - "A little smile, a little magic."
     - "先吐个泡泡，再慢慢往前游。"
     - "炉子上永远温着一锅米饭 🍚"
+    - "Smile DeepSeek！今天也要开心吐泡泡～"
+    - "A little smile, a little magic."
+    - "先吐个泡泡，再慢慢往前游。"
+    - "炉子上永远温着一锅米饭 🍚"
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -207,7 +211,7 @@ toc:
 post_copyright:
   enable: true
   decode: false
-  author_href: https://github.com/
+  author_href: https://github.com/cou-penguin79
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
@@ -293,8 +297,8 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: '@10ve'
+      link: https://github.com/cou-penguin79
   card_announcement:
     enable: true
     content: 'Smile DeepSeek～ 这里是一只大肥鱼的小小深海。'
