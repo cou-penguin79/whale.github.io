@@ -1,0 +1,127 @@
+# ============================================================
+#  大肥鱼深海站 · Hexo + Butterfly
+# ============================================================
+
+# Site
+title: 大肥鱼深海站
+subtitle: 'Smile DeepSeek！今天也要开心吐泡泡～'
+description: 'DeepSeek 大肥鱼的深海小站，一只戴着女仆头饰的鲸鱼在海底记录生活的地方。'
+keywords: DeepSeek,大肥鱼,鲸鱼,随笔
+author: 大肥鱼
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+url: https://blog.10vewhale.top
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: false
+  auto_detect: false
+  tab_replace: '    '
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: false
+  tab_replace: ''
+
+# Home page
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: 随笔
+category_map:
+tag_map:
+
+# Metadata
+meta_generator: true
+
+# 搜索（Butterfly 的 config.pug 会读取 config.search.path）
+search:
+  path: search.xml
+  field: post
+  content: post
+  format: html
+
+# Algolia 占位（模板会解构它）
+algolia:
+  appId:
+  apiKey:
+  indexName:
+
+# Date / Time
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude
+include:
+exclude:
+ignore:
+
+# Theme
+theme: butterfly
+
+# Deployment
+deploy:
+  type: ''
+  repo: ''
+
+# RSS 订阅
+feed:
+  type: atom
+  path: rss.xml
+  icon: /img/favicon.svg
+  limit: 20
+  order_by:
+    - date
+  error_log: false
+
+# 标签 / 分类 / 归档
+tag_generator:
+  type: tag
+category_generator:
+  type: category
+archive_generator:
+  type: category
+  per_page: 0
+  yearly: false
+  monthly: true
+  order_by: -date
