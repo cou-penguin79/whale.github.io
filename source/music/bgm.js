@@ -22,6 +22,20 @@
   }
 
   loadCss('/music/aplayer.min.css');
+
+  // 抬高悬浮播放器位置（APlayer fixed 默认贴在左下角 bottom:0）
+  // 想再高/更低，改这里的 OFFSET 数值即可（px）
+  var OFFSET = 90;
+  var style = document.createElement('style');
+  style.textContent =
+    '.aplayer-fixed{bottom:' + OFFSET + 'px !important;}' +
+    '.aplayer-fixed .aplayer-body{bottom:' + OFFSET + 'px !important;}' +
+    '.aplayer-fixed .aplayer-list{margin-bottom:' + (OFFSET + 65) + 'px !important;}' +
+    '.aplayer-fixed .aplayer-icon-back,.aplayer-fixed .aplayer-icon-play,' +
+    '.aplayer-fixed .aplayer-icon-forward,.aplayer-fixed .aplayer-icon-menu{' +
+    'bottom:' + (OFFSET + 27) + 'px !important;}';
+  document.head.appendChild(style);
+
   loadScript('/music/aplayer.min.js').then(function () {
     if (!window.APlayer) return;
     // fixed 模式需要容器元素：动态创建并挂到 body
